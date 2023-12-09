@@ -37,7 +37,6 @@ class Character(db.Model):
             "eye_color": self.eye_color,
             "hair_color": self.hair_color
         }
-
 class Planets(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(120), nullable=False)
@@ -56,9 +55,10 @@ class Planets(db.Model):
             "name": self.name,
             "gravity": self.gravity,
             "climate": self.climate,
-            "population": self.population,
+            "poblation": self.poblation,
             "rotation_period": self.rotation_period
         }
+
 
 class Favorites(db.Model):
     id = db.Column(db.Integer, primary_key=True)
